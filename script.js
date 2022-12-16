@@ -1,5 +1,5 @@
-const weather = {
-    apiKey: "864c5457497fab035cc59942e078f492",
+const weather = {           //create an obj to store functions and varibles for the API
+    apiKey: "864c5457497fab035cc59942e078f492",   //access the weather data from openweather.org
     fetchWeather: function (city) {
       fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -16,9 +16,9 @@ const weather = {
         })
         .then((data) => this.displayWeather(data));
     },
-    displayWeather: function (data) {
+    displayWeather: function (data) {    //display the weather data by replacing DOM content
       const { name } = data;
-      const { icon, description } = data.weather[0];
+      const { icon, description } = data.weather[0];   //extract from data obj and store them as variables
       const { temp, humidity } = data.main;
       const { speed } = data.wind;
       document.querySelector(".city").innerText = "Weather in " + name;
@@ -28,7 +28,7 @@ const weather = {
       document.querySelector(".humidity").innerText ="Humidity: " + humidity + "%";
       document.querySelector(".wind").innerText ="Wind speed: " + speed + " km/h";
       document.querySelector(".weather").classList.remove("loading");
-      document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";
+      document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";   //get random background images from unsplash.com
     },
     search: function () {
       this.fetchWeather(document.querySelector(".search-bar").value);
@@ -40,7 +40,7 @@ const weather = {
   });
   
   document.querySelector(".search-bar").addEventListener("keyup", function (event) {
-      if (event.key == "Enter") {
+      if (event.key == "Enter") {   //pressing enter key used to search 
         weather.search();
       }
     });
