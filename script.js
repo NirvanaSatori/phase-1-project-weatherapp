@@ -33,7 +33,7 @@ const weather = {
       document.querySelector(".wind").innerText ="Wind speed: " + speed + " km/h";
       document.querySelector(".weather").classList.remove("loading");
        //get random background images from unsplash.com
-      document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')";  
+      document.body.style.backgroundImage ="url('https://source.unsplash.com/1920x1080/?" + name + "')";  
     },
     search: function () {    //add a search bar
       this.fetchWeather(document.querySelector(".search-bar").value);   
@@ -51,5 +51,5 @@ const weather = {
       }
     });
   
-  weather.fetchWeather("Nairobi");
+ weather.fetchWeather("Nairobi");
   
