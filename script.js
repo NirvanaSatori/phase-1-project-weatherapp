@@ -6,10 +6,11 @@ const weather = {
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           city +
           "&units=metric&appid=" +
-          this.apiKey
+          this.apiKey                   //gets the weather data from API 
       )
         .then((response) => {
           if (!response.ok) {
+            //throw an error if data is missing
             alert("No weather found.");
             throw new Error("No weather found.");
           }
