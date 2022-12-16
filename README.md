@@ -8,6 +8,10 @@
 ## BDD //What your project does
     As a user :
     -You can access the current weather of any location around the world.
+    -displays//create an obj to store functions and varibles for the API temperature in degrees celcius
+    -shows humidity of the location
+    -shows rainfall of the location
+    -shows windspeed of the location.
     
 
 ## Live Link
