@@ -27,4 +27,4 @@ Here is the link [Weather App](https://github.com/NirvanaSatori/phase-1-project-
     - +254716135259
 
 ## License
-Licenced under the [MT-licence](https://github.com/NirvanaSatori/phase-1-project-weather-app/blob/main/LICENSE) Copyright (c) 2022 **NirvanaSatori
+Licenced under the [MT-licence](https://github.com/NirvanaSatori/phase-1-project-weather-app/blob/main/LICENSE) Copyright (c) 2022 **NirvanaSatori.
